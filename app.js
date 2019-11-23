@@ -2,14 +2,14 @@
 
 // #1
 
-function raiseToPower(b, e) {
-  return Math.pow(b, e);
-}
+// function raiseToPower(b, e) {
+//   return Math.pow(b, e);
+// }
 
-var base = 2;
-var exp = 3;
-var power = raiseToPower(base, exp);
-console.log(power);
+// var base = 2;
+// var exp = 3;
+// var power = raiseToPower(base, exp);
+// console.log(power);
 
 // #2
 
@@ -19,15 +19,15 @@ console.log(power);
 //   return x + y;
 // }
 
-// var result = getAnswers;
+// var result = getAnswer();
 // console.log(result);
 
 // #3
 
-// var myPay = 1000;
-// var myBills = 899;
-// var moneyLeftOver = recievables - payable;
-// console.log(`My leftover pay is: ${moneyLeftover}`);
+var myPay = 1000;
+var myBills = 899;
+var moneyLeftOver = myPay - myBills;
+console.log(`My leftover pay is: ${moneyLeftOver}`);
 
 // #4
 
