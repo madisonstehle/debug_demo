@@ -2,14 +2,14 @@
 
 // #1
 
-// function raiseToPower(b, e) {
-//   return Math.pow(b, e);
-// }
+function raiseToPower(b, e) {
+  return Math.pow(b, e);
+}
 
-// var base = 2;
-// var exp = 3;
-// var power = raiseToPower(exp, base);
-// console.log(power);
+var base = 2;
+var exp = 3;
+var power = raiseToPower(base, exp);
+console.log(power);
 
 // #2
 
@@ -31,12 +31,12 @@
 
 // #4
 
-// var innerHtml = "<p>Click here to <a href="#Home">return home</a></p>";
+// var innerHtml = document.getElementsByTagName(<p>) = "<p>Click here to <a href="index.html">return home</a></p>";
 // console.log(innerHtml);
 
-// #5
+// // #5
 
-// function count() {
+// // function count() {
 //   var oneToFive = "12345";
 //   var len = oneToFive.length;
 //   for (var i = 1; i <= len; i++) {
