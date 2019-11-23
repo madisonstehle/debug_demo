@@ -24,22 +24,22 @@
 
 // #3
 
-var myPay = 1000;
-var myBills = 899;
-var moneyLeftOver = myPay - myBills;
-console.log(`My leftover pay is: ${moneyLeftOver}`);
+// var myPay = 1000;
+// var myBills = 899;
+// var moneyLeftOver = myPay - myBills;
+// console.log(`My leftover pay is: ${moneyLeftOver}`);
 
 // #4
 
-// var innerHtml = document.getElementsByTagName(<p>) = "<p>Click here to <a href="index.html">return home</a></p>";
+// var innerHtml = "<p>Click here to <a href=\"#Home\">return home</a></p>";
 // console.log(innerHtml);
 
 // // #5
 
-// // function count() {
+// function count() {
 //   var oneToFive = "12345";
 //   var len = oneToFive.length;
-//   for (var i = 1; i <= len; i++) {
+//   for (var i = 0; i < len; i++) {  
 //     console.log(oneToFive[i]);
 //   }
 // }
@@ -48,9 +48,10 @@ console.log(`My leftover pay is: ${moneyLeftOver}`);
 
 // #6
 
-// var myArray = [1, 2, 3;
-// for(var i = 0; i < myArray; i++){
-//     var arraySum += myArray[i];
+// var myArray = [1, 2, 3];
+// var arraySum = 0;
+// for(var i = 0; i < myArray.length; i++){
+//     var arraySum = arraySum + myArray[i];
 // }
 // console.log(`Total of array values are: ${arraySum}`);
 
@@ -60,7 +61,7 @@ console.log(`My leftover pay is: ${moneyLeftOver}`);
 // var y = 9;
 // var result = "to come";
 
-// if(x = y) {
+// if(x === y) {
 //   result = "Equal!";
 // } else {
 //   result = "Not equal!";
@@ -71,10 +72,11 @@ console.log(`My leftover pay is: ${moneyLeftOver}`);
 // #8 
 
 // function myFunction() {
-//   for (var i = 1; i != 4; i += 2) {
+//   for (var i = 1; i <= 4; i += 2) {
 //     console.log("Energizer Bunny.  Still going!");
 //   }
 // }
+// myFunction();
 
 // #9
 
@@ -95,21 +97,23 @@ console.log(`My leftover pay is: ${moneyLeftOver}`);
 
 // #10
 
-// function createAnArray(){
-//     var newArray = {};
-//     for(i = 0; i <= 10; i++){
-//         push.newArray(i);
-//     }
-//     return createAnArray;
-// }
+function createAnArray(){
+    var newArray = [];
+    for(i = 0; i <=10; i++){
+        newArray.push(i);
+    }
+    return newArray;
+}
 
-// function addArray(array) {
-//     for(var i = 1; i < array; i+){ 
-//         var sum = 0;
-//         sum += i;
-//     }
-//     return sum;
-// }
+function addArray(array) {
+    var sum = 0;
+    for(var i = 1; i < array.length; i++){ 
+        sum += array[i];
+    }
+    return sum;
+}
 
-// var newArr = createAnArray();
-// var add = addArray(newArr);
+var newArr = createAnArray();
+var add = addArray(newArr);
+
+console.log(add);
